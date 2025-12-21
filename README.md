@@ -1,4 +1,4 @@
- -这里是具体的坐标转换代码，里面由两部分需要根据自己的数据进行调整。第一部分是坐标数据，需要输入自己的已知四个像素点和对应的实际坐标点（像素点坐标可通过imagej读取获得）。一二部分是坐标对应的图片的地址和要输出到的Excel表格的地址，根据自己的存储地址来输入即可。
+
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -413,11 +413,10 @@ class InteractiveCoordinateConverter:
         return df
 
 def main():
-    image_path = r"图片路径"  # 使用原始字符串
+    image_path = r"图片路径"  
     output_path = r"Excel表格路径"
     
     converter = InteractiveCoordinateConverter(image_path, output_path)
-    
     converter.start_interactive_marking()
 
 if __name__ == "__main__":
