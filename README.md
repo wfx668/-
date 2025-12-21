@@ -3,14 +3,13 @@
 import numpy as np
 import pandas as pd
 import matplotlib
-# 设置matplotlib后端为TkAgg，确保交互功能正常工作
+
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 import os
 from scipy.optimize import least_squares
 
-# 解除PIL图片尺寸限制
 import PIL.Image
 PIL.Image.MAX_IMAGE_PIXELS = None  # 解除限制
 
